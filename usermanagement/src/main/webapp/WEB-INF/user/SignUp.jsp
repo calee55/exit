@@ -61,7 +61,7 @@
 </style>
 
 <!-- Custom styles for this template -->
-<link href="./login/css/signup.css" rel="stylesheet">
+<link href="../css/signup.css" rel="stylesheet">
 </head>
 <body class="bg-light">
 
