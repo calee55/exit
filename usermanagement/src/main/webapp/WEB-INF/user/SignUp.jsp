@@ -64,54 +64,50 @@
 <link href="../css/signup.css" rel="stylesheet">
 </head>
 <body class="bg-light">
-
 	<div class="container">
 		<main>
-			<div>
-				<h4 class="mb-3">Sign Up</h4>
-				<form class="needs-validation" novalidate="">
-					<div class="row g-3">
-						<div class="col-12">
-							<label for="userid" class="form-label">UseID</label> <span
-								class="input-group-text">@</span> <input type="text"
-								class="form-control" id="username" placeholder="Userid"
-								required="">
-							<div class="invalid-feedback">Your ID is required.</div>
-						</div>
-					</div>
+			<h4 class="mb-3">Sign Up</h4>
+			<form class="needs-validation" novalidate="" method="post"
+				action="/login/signup">
+				<div class="row g-3">
 					<div class="col-12">
-						<label for="password" class="form-label">Password</label> <input
-							type="password" class="form-control" id="password"
-							placeholder="Password" required="">
-						<div class="invalid-feedback">Your Password is required.</div>
+						<input type="text" class="form-control" id="username"
+							name="user_id" placeholder="Userid" required="">
+						<div class="invalid-feedback">Your ID is required.</div>
 					</div>
-					<div class="col-12">
-						<label for="email" class="form-label">Email <span
-							class="text-muted">(Optional)</span></label> <input type="email"
-							class="form-control" id="email" placeholder="you@example.com">
-						<div class="invalid-feedback">Please enter a valid email
-							address for shipping updates.</div>
-					</div>
-					<div class="col-12">
-						<label for="address" class="form-label">Address</label> <input
-							type="text" class="form-control" id="address"
-							placeholder="1234 Main St" required="">
-						<div class="invalid-feedback">Please enter your shipping
-							address.</div>
-					</div>
-					<div class="col-12">
-						<label for="address2" class="form-label">Address 2 <span
-							class="text-muted">(Optional)</span></label> <input type="text"
-							class="form-control" id="address2"
-							placeholder="Apartment or suite">
-					</div>
-			</div>
-			<hr class="my-4">
-			<button class="w-100 btn btn-primary btn-lg submit" type="submit">Continue
-				to checkout</button>
+				</div>
+				<div class="col-12">
+					<label for="password" class="form-label">Password</label> <input
+						type="password" class="form-control" id="password" name="user_pw"
+						placeholder="Password" required="">
+					<div class="invalid-feedback">Your Password is required.</div>
+				</div>
+				<div class="col-12">
+					<label for="email" class="form-label">Email <span
+						class="text-muted">(Optional)</span></label> <input type="email"
+						class="form-control" id="email" name="user_email"
+						placeholder="you@example.com">
+					<div class="invalid-feedback">Please enter a valid email
+						address for shipping updates.</div>
+				</div>
+				<div class="col-12">
+					<label for="address" class="form-label">Address</label> <input
+						type="text" class="form-control" id="addres" name="address"
+						name="user_id" placeholder="1234 Main St" required="">
+					<div class="invalid-feedback">Please enter your shipping
+						address.</div>
+				</div>
+				<div class="col-12">
+					<label for="address2" class="form-label">Address 2 <span
+						class="text-muted">(Optional)</span></label> <input type="text"
+						class="form-control" id="address2" name="address2"
+						placeholder="Apartment or suite">
+				</div>
+				<hr class="my-4">
+				<button class="w-100 btn btn-primary btn-lg submit" type="submit">Continue
+					to checkout</button>
 			</form>
-	</div>
-	</main>
+		</main>
 	</div>
 
 	<script src="../js/bootstrap.bundle.min.js"></script>
@@ -121,8 +117,7 @@
 
 	<script type="text/javascript">
 		
-
-</script>
+	</script>
 
 </body>
 </html>
