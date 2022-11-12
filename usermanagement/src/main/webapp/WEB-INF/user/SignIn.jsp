@@ -1,7 +1,7 @@
 <html><head>
 <meta charset="UTF-8">
 <title>sign in</title>
-<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
 <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sign-in/">
 <style>
 .bd-placeholder-img {
@@ -59,7 +59,7 @@
 </head>
 <body class="text-center">
 	<!-- Custom styles for this template -->
-	<link href="../css/signin.css" rel="stylesheet">
+	<link href="./css/signin.css" rel="stylesheet">
 
 	<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
   <symbol id="google" viewBox="0 0 16 16">

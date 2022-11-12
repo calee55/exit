@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sign Up</title>
 
-<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="./css/bootstrap.min.css" rel="stylesheet">
 
 <style>
 .bd-placeholder-img {
@@ -61,7 +61,7 @@
 </style>
 
 <!-- Custom styles for this template -->
-<link href="../css/signup.css" rel="stylesheet">
+<link href="./css/signup.css" rel="stylesheet">
 </head>
 <body class="bg-light">
 	<div class="container">
@@ -110,8 +110,8 @@
 		</main>
 	</div>
 
-	<script src="../js/bootstrap.bundle.min.js"></script>
-	<script src="../js/signup.js"></script>
+	<script src="./js/bootstrap.bundle.min.js"></script>
+	<script src="./js/signup.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 
 

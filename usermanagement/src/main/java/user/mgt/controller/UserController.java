@@ -16,21 +16,21 @@ public class UserController {
 	UserService userService;
 	
 	
-	@RequestMapping("/login/signin")
+	@RequestMapping("/signin")
 	public ModelAndView signin() {
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("SignIn");
 		return mv;
 	}
 	
-	@RequestMapping("/login/signup")
+	@RequestMapping("/signup")
 	public ModelAndView signup() {
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("SignUp");
 		return mv;
 	}
 	
-	@PostMapping("/login/signup")
+	@PostMapping("/signup")
     public String signup(@ModelAttribute("user") User user) {
 		userService.saveUser(user);
         return "redirect/";
