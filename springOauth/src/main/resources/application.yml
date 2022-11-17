@@ -1,0 +1,35 @@
+logging:
+  level:
+    root: info
+server:
+  port: 8888
+spring:
+  application:
+    name: oauth2
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.0.144:3306/usedb?serverTimezone=UTC&characterEncoding=UTF-8
+    username: root
+    password: 1q2w3e4r!@
+  devtools:
+    livereload:
+      enabled: true
+  freemarker:
+    cache: false
+  jpa:
+    hibernate:
+      ddl-auto: update
+      use-new-id-generator-mappings: true
+    database: mysql
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 834683920450-8mgjjahenpurcvo9dp4not4vhadk7n94.apps.googleusercontent.com
+            client-secret: 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
+            scope: email
