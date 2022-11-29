@@ -1,8 +1,13 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java"%>
+<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html><head>
 <meta charset="UTF-8">
 <title>sign in</title>
-<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sign-in/">
+
 <style>
 .bd-placeholder-img {
 	font-size: 1.125rem;
@@ -59,7 +64,7 @@
 </head>
 <body class="text-center">
 	<!-- Custom styles for this template -->
-	<link href="./css/signin.css" rel="stylesheet">
+	<link href="css/signin.css" rel="stylesheet">
 
 	<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
   <symbol id="google" viewBox="0 0 16 16">
@@ -91,11 +96,15 @@
 			<p class="login-callout mt-3">
 				New to Exit? <a href="signup">Create account</a>.
 			</p>
-			<button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-3" type="submit">
+			<c:forEach items="${urls}" var="a">
+			<button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-3" type="button" onclick="window.location.href='${a.value}'">
 				<svg class="bi me-1" width="16" height="16">
 					<use xlink:href="#google"></use></svg>
-				Sign up with Google
+				Sign up with Google				
 			</button>
+			</c:forEach>
+        	
+   		
 		</form>
 	</main>
 
