@@ -57,7 +57,7 @@ public class UserController {
 		return mv;
 	}
 	
-	@RequestMapping("main")
+	@RequestMapping("/")
 	public ModelAndView main() {
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("Main");
