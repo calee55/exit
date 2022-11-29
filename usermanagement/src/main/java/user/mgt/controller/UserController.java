@@ -57,6 +57,13 @@ public class UserController {
 		return mv;
 	}
 	
+	@RequestMapping("main")
+	public ModelAndView main() {
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("Main");
+		return mv;
+	}
+	
 	@PostMapping("/signup")
     public String signup(@ModelAttribute("user") User user) {
 		userService.saveUser(user);

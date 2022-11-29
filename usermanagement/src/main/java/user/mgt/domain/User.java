@@ -21,7 +21,7 @@ public class User {
 	
     @Id        
     private String email;   
-    @NotNull
+    
     private String pw;
        
     private String address;
